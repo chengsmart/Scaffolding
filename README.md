@@ -1,5 +1,4 @@
-# Scaffolding
-Scaffolding for FE's framework
+# Scaffolding for FE's framework
 ===
 ### framework7
 * usage
