@@ -1,5 +1,5 @@
 # Scaffolding for FE's framework
-===
+
 ### framework7
 * usage
 1. `$ npm install` init your development environment
