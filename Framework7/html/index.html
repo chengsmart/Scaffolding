@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no"/>
+    <title>framework7 demo</title>
+    <!-- framework7 -->
+    <link rel="stylesheet" href="../lib/framework7/dist/css/framework7.ios.css">
+    <link rel="stylesheet" href="../lib/framework7/dist/css/framework7.ios.colors.css">
+    <!--plugin-->
+    <!--style-->
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/modules.css">
+    <link rel="stylesheet" href="../css/detail.css">
+</head>
+<body>
+<div class="statusbar-overlay"></div>
+<div class="views">
+    <div class="view view-main">
+        <!-- 其他页面使用toolbar-fixed -->
+        <div class="pages navbar-fixed">
+            <div class="page toolbar-fixed tmod-transparent-navbar p-index" data-page="p-index">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="center">首页</div>
+                    </div>
+                </div>
+                <div class="page-content">
+                    <div style="height: 500px;background-color: #ddd;"></div>
+                    <div style="height: 500px;background-color: #eee;"></div>
+                    <div style="height: 500px;background-color: #ddd;"></div>
+                    <div style="height: 500px;background-color: #eee;"></div>
+                </div>
+                <div class="toolbar">
+                    <a href="second_page.html" class="button button-big button-fill">下一页</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="devJavascript"><!-- 使用gulp build以后，此div中的js会被删除替换。模板等其他js文件请勿放入 -->
+    <!-- Library JS -->
+    <script src="../lib/framework7/dist/js/framework7.js"></script>
+    <!-- plugin -->
+    <script src="../js/plugin/framework7.navbarAnimation.js"></script>
+    <script src="../js/plugin/framework7.stopBack.js"></script>
+    <!-- config js -->
+    <script src="../js/variable.url.js"></script>
+    <script src="../js/variable.js"></script>
+    <script src="../js/config.js"></script>
+    <script src="../js/template.config.js"></script>
+    <script src="../js/tools.js"></script>
+    <script src="../js/services.js"></script>
+    <script src="../js/services.js"></script>
+    <!-- controller js -->
+    <script src="../js/controllers/index.js"></script>
+    <script src="../js/controllers/second_page.js"></script>
+    <!-- 请务必将此文件引用于所有js最后，用于首页初始化 -->
+    <script src="../js/init.js"></script>
+</div>
+</body>
+</html>

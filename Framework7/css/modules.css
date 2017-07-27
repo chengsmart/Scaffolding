@@ -1,0 +1,40 @@
+/*均分模块*/
+.tmod-row { display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; box-sizing: border-box; width: 100%; -webkit-box-pack: justify; -ms-flex-pack: justify; -webkit-justify-content: space-between; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; }
+.tmod-row > .column { display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; flex-direction: column; box-sizing: border-box; width: 100%; height: 100%; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; -webkit-box-flex: 1; -ms-flex: 1; -webkit-box-orient: vertical; -moz-box-orient: vertical; -ms-flex-direction: column; -webkit-flex-direction: column; }
+
+/*工具栏icon*/
+.tmod-menubar { background-color: #f1f1f1; }
+.tmod-menubar.tabbar.vice a.active { color: #0085d0; }
+.tmod-menubar:before { display: none; }
+.tmod-menubar .tmod-row { width: 100%; height: 48px; }
+.tmod-menubar .toolbar-inner { padding: 0; }
+.tmod-menubar.right b.tag { top: 0; right: 0; }
+.tmod-menubar .column i.icon { font-size: 25px; line-height: 1; width: 25px; height: 30px; min-height: 25px; }
+.tmod-menubar .toggle-btn { position: relative; overflow: visible; color: #fff; }
+.tmod-menubar .toggle-btn i.icon { color: #fff; }
+.tmod-menubar .toggle-btn:after { position: absolute; z-index: -1; top: -10px; right: -25px; left: 0; display: block; height: 100px; content: ''; -webkit-border-radius: 100%; -moz-border-radius: 100%; border-radius: 100%; background-color: #0085d0; }
+.tmod-menubar.vice .toggle-btn:after { background-color: #00c341; }
+
+/*便签窗口*/
+.tmod-warning { position: absolute; z-index: 13000; top: 0; left: 0; display: none; width: 100%; height: 100%; background: rgba(0, 0, 0, .4); }
+.tmod-warning .inner { font-size: 16px; line-height: 30px; position: absolute; z-index: 13001; top: 40%; right: 20%; left: 20%; padding: 10px; text-align: center; color: #fff; border-radius: 5px; background-color: rgba(49, 49, 49, .9); }
+
+/* 优化描边样式 */
+.tmod-border, .tmod-border-t, .tmod-border-b, .tmod-border-l, .tmod-border-r { position: relative; }
+.tmod-border:before, .tmod-border-t:before { position: absolute; z-index: 15; top: 0; right: auto; bottom: auto; left: 0; display: block; width: 100%; height: 1px; content: ''; -webkit-transform-origin: 50% 0; transform-origin: 50% 0; background-color: #ddd; }
+.tmod-border:after, .tmod-border-b:after { position: absolute; z-index: 15; top: auto; right: auto; bottom: 0; left: 0; display: block; width: 100%; height: 1px; content: ''; -webkit-transform-origin: 50% 0; transform-origin: 50% 0; background-color: #ddd; }
+.tmod-border-l:after { position: absolute; z-index: 15; top: 0; right: auto; bottom: 0; left: 0; display: block; width: 1px; content: ''; -webkit-transform-origin: 50% 0; transform-origin: 50% 0; background-color: #ddd; }
+.tmod-border-r:after { position: absolute; z-index: 15; top: 0; right: 0; bottom: 0; left: auto; display: block; width: 1px; content: ''; -webkit-transform-origin: 50% 0; transform-origin: 50% 0; background-color: #ddd; }
+html.ios-gt-6.pixel-ratio-2 .tmod-border:before, html.ios-gt-6.pixel-ratio-2 .tmod-border:after, html.ios-gt-6.pixel-ratio-2 .tmod-border-t:before, html.ios-gt-6.pixel-ratio-2 .tmod-border-b:after { -webkit-transform: scaleY(.5); transform: scaleY(.5); }
+html.ios-gt-6.pixel-ratio-3 .tmod-border:before, html.ios-gt-6.pixel-ratio-3 .tmod-border:after, html.ios-gt-6.pixel-ratio-3 .tmod-border-t:before, html.ios-gt-6.pixel-ratio-3 .tmod-border-b:after { -webkit-transform: scaleY(.33); transform: scaleY(.33); }
+.content-block-inner:before, .content-block-inner:after { background-color: #ddd; }
+
+/*无背景色的标题*/
+.tmod-title { margin: 10px 0; padding: 0 10px; }
+
+/* 透明navbar 含js功能，见 framework7.navbarAnimation.js */
+.tmod-transparent-navbar .navbar { background-color: transparent; }
+.tmod-transparent-navbar .navbar .center { color: transparent; }
+.tmod-transparent-navbar .navbar .right a { color: #999; }
+.tmod-transparent-navbar .navbar:after { display: none; }
+.tmod-transparent-navbar .page-content { padding-top: 0; }
