@@ -1,6 +1,6 @@
 {
     "name": "framework7-base-cli",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Framework7's scaffolding",
     "main": "index.js",
     "keywords": [
