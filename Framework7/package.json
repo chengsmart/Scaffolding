@@ -1,15 +1,12 @@
 {
     "name": "framework7-base-cli",
-    "version": "1.0.4",
+    "version": "1.0.7",
     "description": "Framework7's scaffolding",
     "main": "index.js",
     "keywords": [
         "framework7",
         "template7"
     ],
-    "bin": {
-        "feflow": "./bin/initf7"
-    },
     "author": "chengshuai.tj@gmail.com",
     "homepage": "https://chengsmart.github.io/",
     "git repository":"https://github.com/chengsmart/Scaffolding.git",
