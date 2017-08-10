@@ -1,17 +1,19 @@
 {
-    "name": "Framework7 scaffolding",
-    "version": "1.0.0",
-    "description": "framework7's scaffolding",
+    "name": "framework7-base-cli",
+    "version": "1.0.3",
+    "description": "Framework7's scaffolding",
     "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
     "keywords": [
         "framework7",
         "template7"
     ],
-    "author": "Smart",
-    "license": "ISC",
+    "bin": {
+        "feflow": "./bin/initf7"
+    },
+    "author": "chengshuai.tj@gmail.com",
+    "homepage": "https://chengsmart.github.io/",
+    "git repository":"https://github.com/chengsmart/Scaffolding.git",
+    "license": "MIT",
     "devDependencies": {
         "framework7": "^1.6.4",
         "gulp": "^3.9.1",
