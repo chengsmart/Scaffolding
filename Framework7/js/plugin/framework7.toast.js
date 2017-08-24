@@ -45,7 +45,7 @@ Framework7.prototype.plugins.toast = function (app, params) {
     /**
      * @param text String 展示的文字内容
      * @param onClose function 关闭后触发回调
-     * @param options Object 配置参数  duration: 延迟时间   clickClose: 是否允许点击关闭提示
+     * @param options Object 配置参数
      * @param options.duration Number 延迟时间
      * @param options.clickClose Boolean 是否允许点击关闭提示
      * */
