@@ -4,4 +4,4 @@
  * Author:Smart
  * Description:
  */
-var HOSTNAME = 'http://otcstg.tasly.com/';
+var HOSTNAME = 'http://xxx.xxx.com';

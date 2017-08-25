@@ -108,21 +108,6 @@ var Tools = {
     successTip: function (data, successFn, errorFn) {
         data.errCode ? (errorFn ? errorFn(data) : myApp.alert(data.message, '数据错误')): (successFn && successFn(data));
     },
-    //便签窗口 弹出提示
-    warningTag: function (element, elementValue, fn) {
-        //element = 当前页面id(#page_home) elementValue = 提示内容 fn = 提示后执行fn
-        $$(element).append('<div class="tmod-warning">' +
-            '<div class="inner">' + elementValue + '</div>' +
-            '</div>');
-        $$('.tmod-warning').show();
-        setTimeout(function () {
-            $$('.tmod-warning').hide();
-            $$('.tmod-warning').remove();
-            if (fn) {
-                fn()
-            }
-        }, 1300)
-    },
 //报错信息采集
     handleErr: function (errorMessage, scriptURI, lineNumber, columnNumber, errorObj) {
         var logTime = new Date().getTime(),
