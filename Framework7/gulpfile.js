@@ -41,13 +41,13 @@ var buildPaths = {
 // 定义环境的接口地址
 var URL = {
     dev: 'http://10.6.0.46:8085/',
-    stg: 'http://otcstg.tasly.com/',
-    prd: 'http://mt.dajiankang.com/'
+    stg: 'http://10.6.0.46:8085/',
+    prd: 'http://10.6.0.46:8085/'
 };
 var SSO = {
     dev:'http://10.6.0.46:8100/',
-    stg:'http://otcstg.tasly.com/',
-    prd:'http://mtsso.dajiankang.com/'
+    stg:'http://10.6.0.46:8100/',
+    prd:'http://10.6.0.46:8100/'
 }
 var knownOptions = {
     string: 'env',
